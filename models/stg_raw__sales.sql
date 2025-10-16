@@ -12,5 +12,5 @@ with
       quantity
     from source
   )
-
 select * from renamed
+
