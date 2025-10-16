@@ -1,0 +1,14 @@
+# models/schema.yml
+
+version: 2
+
+sources:
+  - name: raw     #-> datasete verdiğimiz yeni ad. dataset için schema kullanılır.
+    schema: gz_raw_data   #-> datasetin bigquery deki adı
+    tables:   #hangi tabloları alacağımızı beliritiriz.
+      - name: sales   #->tabloya verdiğimiz yeni ad. tablolar için identifier kullanılır.
+        identifier: raw_gz_sales
+      - name: product
+        identifier: raw_gz_product
+      - name: ship
+        identifier: raw_gz_ship
