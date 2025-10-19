@@ -10,4 +10,5 @@ select *
 from renamed
 
     -- dbt run -m stg_raw__product.sql >> burda -m demek -- demek
-    
+
+   
