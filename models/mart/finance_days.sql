@@ -1,6 +1,6 @@
 
 
-{{config (materialized='table') }}
+{{config (materialized='table') }}     --#varsayılan olan view görünümünü değiştirmek için config fonksiyonu kullanılır.
 
 WITH orders_per_day AS (
 SELECT
