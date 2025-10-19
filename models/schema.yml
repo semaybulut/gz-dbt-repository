@@ -9,10 +9,6 @@ sources:
       - name: sales   #->tabloya verdiğimiz yeni ad. tablolar için identifier kullanılır.
         identifier: raw_gz_sales
         description: Greenweez'in satışları / her orders_id'de bulunan bir product_id için bir satırımız var
-        # Freshness testing
-        loaded_at_field: "CAST(date_date AS TIMESTAMP)"
-        freshness:
-          warn_after: {count: 90, period: day}
         columns:
           - name: date_date
             description: satın alma tarihi
